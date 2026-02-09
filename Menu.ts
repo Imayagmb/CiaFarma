@@ -1,10 +1,11 @@
 import { Input } from "./src/util/Input";
+// import {Produto} from "./src/model/Produto";
 
 // MOSTRA O CABEÇALHO EM ASCII
 function cabecalho(titulo: string): void {
   console.log(`
 ╔════════════════════════════════╗
-║ ${titulo.padEnd(30)} ║
+         ${titulo.padEnd(30)} 
 ╚════════════════════════════════╝
 `);
 }
@@ -38,36 +39,48 @@ export function main() {
         console.clear();
         cabecalho("CRIAR PRODUTO");
         console.log("Funcionalidade em desenvolvimento...");
+
+        keyPress();
         break;
 
       case 2:
         console.clear();
         cabecalho("LISTAR PRODUTOS");
         console.log("Funcionalidade em desenvolvimento...");
+
+        keyPress();
         break;
 
       case 3:
         console.clear();
         cabecalho("CONSULTAR PRODUTO");
         console.log("Funcionalidade em desenvolvimento...");
+
+        keyPress();
         break;
 
       case 4:
         console.clear();
         cabecalho("ATUALIZAR PRODUTO");
         console.log("Funcionalidade em desenvolvimento...");
+
+        keyPress();
         break;
 
       case 5:
         console.clear();
         cabecalho("DELETAR PRODUTO");
         console.log("Funcionalidade em desenvolvimento...");
+
+        keyPress();
         break;
 
       case 9:
         console.clear();
         cabecalho("SOBRE");
         sobre();
+
+        keyPress();
         break;
 
       case 0:
@@ -79,13 +92,12 @@ export function main() {
         console.clear();
         cabecalho("ERRO!!!");
         console.log("Opcao invalida!");
+        keyPress();
     }
 
     if (opcao === 0) {
       break;
     }
-
-    Input.question("\nPressione ENTER para continuar...");
   }
 }
 
@@ -100,6 +112,10 @@ function sobre(): void {
 ║                                      ║
 ╚══════════════════════════════════════╝
 `);
+}
+function keyPress(): void {
+  console.log("\nPressione enter para continuar...");
+  Input.prompt();
 }
 
 main();
