@@ -50,4 +50,20 @@ export abstract class Produto {
   public set quantidade(value: number) {
     this._quantidade = value;
   }
+
+  //   ═════════════════════════════
+//         EXIBIR PRODUTO
+//   ═════════════════════════════
+  public visualizar(): void {
+    console.log(`
+╔══════════════════════════════╗
+║         DADOS PRODUTO        ║
+╠══════════════════════════════╣
+║ ID: ${this._id}
+║ Nome: ${this._nome}
+║ Preço: R$ ${this._preco.toFixed(2)}
+║ Quantidade: ${this._quantidade}
+╚══════════════════════════════╝
+`);
+  }
 }
