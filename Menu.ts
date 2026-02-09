@@ -1,6 +1,8 @@
 import { Input } from "./src/util/Input";
 
-// MOSTRA O CABEÇALHO EM ASCII
+//   ═════════════════════════════
+//    MOSTRA O CABEÇALHO EM ASCII
+//   ═════════════════════════════
 function cabecalho(titulo: string): void {
   console.log(`
 ╔════════════════════════════════╗
