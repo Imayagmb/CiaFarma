@@ -1,3 +1,5 @@
+# 💊 CiaFarma
+
 <div align="center">
 
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="120"/>
@@ -15,8 +17,6 @@
 </div>
 
 ---
-
-# 💊 CiaFarma
 
 Sistema de farmácia desenvolvido em **TypeScript**, executado via **terminal**, que permite o gerenciamento de produtos através de um **menu interativo**.
 
